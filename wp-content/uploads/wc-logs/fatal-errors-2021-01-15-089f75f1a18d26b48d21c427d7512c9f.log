@@ -1,0 +1,32 @@
+2021-01-15T01:47:14+00:00 CRITICAL Uncaught Error: Call to undefined function the_posts() in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php:15
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php on line 15
+
+2021-01-15T01:47:15+00:00 CRITICAL Uncaught Error: Call to undefined function the_posts() in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php:15
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php on line 15
+
+2021-01-15T01:47:21+00:00 CRITICAL Uncaught Error: Call to undefined function the_posts() in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php:15
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php on line 15
+
+2021-01-15T01:47:44+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php on line 21
+
+2021-01-15T01:47:45+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php on line 21
+
+2021-01-15T01:47:55+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\single.php on line 20
+
+2021-01-15T02:08:01+00:00 CRITICAL Maximum execution time of 1200 seconds exceeded in C:\xampp\htdocs\www\wd-tshop\wp-includes\class-wp-query.php on line 3327
+

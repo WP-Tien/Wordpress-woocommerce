@@ -1,0 +1,129 @@
+.home-popularCate {
+  margin-top: 2rem;
+
+  &__item {
+    height: 100%;
+    background-color: #fff;
+    border: 0.1rem solid #f5f5f5;
+
+    &:hover {
+      position: relative;
+      box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    padding: 1.2rem 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  &__header {
+    height: 4rem;
+    h3 {
+      @extend %section-head-shared;
+    }
+  }
+
+  &__hoverlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--background-color);
+
+    // &--blue {
+    //   background-color: #278eb0;
+    // }
+
+    // &--dark-blue {
+    //   background-color: #23399d;
+    // }
+
+    // &--brown {
+    //   background-color: #ae6208;
+    // }
+
+    // &--red {
+    //   background-color: #b8120d;
+    // }
+
+    // &--dark-brown {
+    //   background-color: #6d3603;
+    // }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--small {
+      width: 8rem;
+      height: 8rem;
+      margin: 0.5rem 0 1.2rem 1.2rem;
+      flex: 0 0 35%;
+    }
+
+    &--big {
+      width: 14rem;
+      height: 14rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    &--small {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin: 1.2rem 0.8rem 0;
+    line-height: 1.8rem;
+    max-height: 3.6rem;
+    text-align: inherit;
+    font-weight: 400;
+    color: #212121;
+
+    &--big {
+      font-size: 1.7rem;
+    }
+    &--small {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__image--small ~ .home-popularCate__title--small {
+    flex: 0 0 65%;
+  }
+
+  &__total {
+    margin: 0.4rem 0.8rem;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    color: #9e9e9e;
+    text-align: inherit;
+    max-height: 2.8rem;
+  }
+}
+
+@include breakpoint-down(medium) {
+  .home-popularCate {
+    margin-top: 0.8rem;
+
+    &__header {
+      height: 4.5rem;
+    }
+  }
+}

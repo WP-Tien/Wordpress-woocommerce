@@ -1,0 +1,440 @@
+.single-product {
+  &__wrap {
+  }
+
+  &__images {
+    padding: 1.5rem;
+    width: 100% !important;
+    // Important for images class of Woo
+  }
+
+  &__summary {
+    &-inner {
+      padding: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 400;
+    @extend %clamp-shared;
+    -webkit-line-clamp: 2;
+  }
+
+  &__price {
+    margin: 0.5rem 0;
+    line-height: 1.2;
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    @extend %price-shared;
+    bdi {
+      font-size: 2rem;
+      margin-left: 0;
+      font-weight: 500;
+    }
+  }
+
+  &__no-price {
+    margin: 0.5rem 0;
+    color: $dark-primary-color;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.7rem;
+  }
+
+  &__onsale {
+    min-height: 2rem;
+    width: 5rem;
+    padding: 0.7rem;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    line-height: 1.2;
+    top: 1.92rem;
+    left: 1.92rem;
+    margin: 0;
+    background-color: #ffda4b;
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.6rem;
+      border-width: 0 2.5rem 0.6rem;
+      border-style: solid;
+      color: #ffda4b;
+      border-color: transparent currentColor transparent currentColor;
+      z-index: 10;
+    }
+  }
+
+  &__short-description {
+    @include flexbox(flex-start, flex-start);
+    margin: 0.5rem 0;
+  }
+
+  &__cart {
+    @include flexbox(flex-start, flex-start, wrap, column);
+    margin-bottom: 2rem;
+    svg {
+      width: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__text {
+    flex: 0 0 11rem;
+    color: #757575;
+  }
+
+  &__desc {
+    flex: 1;
+  }
+
+  &__quantity {
+    @include flexbox(center, flex-start);
+    margin: 1.5rem 0;
+    width: 100%;
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &--minus,
+    &--plus {
+      cursor: pointer;
+      border: 0.1rem solid rgba(0, 0, 0, 0.09);
+      border-radius: 0.2rem;
+      color: rgba(0, 0, 0, 0.8);
+      width: 3.2rem;
+      height: 3.2rem;
+      background: transparent;
+      outline: none;
+    }
+
+    &--total {
+      width: 5rem;
+      height: 3.2rem;
+      border-left: none;
+      border-right: none;
+      font-size: 1.4rem;
+      font-weight: 400;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: text;
+      border-radius: 0;
+      background-color: transparent;
+      appearance: textfield;
+      outline: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.09);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    }
+  }
+
+  &__meta-cate,
+  &__meta-tag {
+    @include flexbox(center, flex-start);
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      min-width: 5rem;
+      min-height: 2.125rem;
+      box-sizing: border-box;
+      padding: 1rem 0.8rem;
+      margin: 0 0.7rem 0.5rem 0;
+      color: rgba(0, 0, 0, 0.8);
+      text-align: left;
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      position: relative;
+      background: #fff;
+      outline: 0;
+      word-break: break-word;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: $dark-primary-color;
+        border-color: $dark-primary-color;
+      }
+    }
+  }
+
+  &__shipping {
+    @include flexbox(flex-start, flex-start);
+    margin: 1.8rem 0;
+
+    &-desc {
+      flex: 1;
+    }
+  }
+
+  &__refund {
+    @include flexbox(flex-start, flex-start);
+    margin: 1.8rem 0;
+
+    &-desc {
+      flex: 1;
+    }
+  }
+
+  &__action {
+    display: flex;
+  }
+
+  &__add-to-cart {
+    margin-right: 1.5rem;
+  }
+
+  &__revproduct,
+  &__description {
+    &-head {
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: 400;
+      margin: 2rem 2rem 1.5rem 2rem;
+      background: rgba(0, 0, 0, 0.02);
+      color: #00000096;
+      padding: 1.2rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &__revproduct,
+  &__description {
+    &-body {
+      margin: 0 2rem;
+      line-height: 2.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__revproduct {
+    &-item {
+    }
+
+    &-title {
+      color: #191e23;
+      font-size: 1.5rem;
+      padding: 0.4rem 0;
+      @extend %clamp-shared;
+      -webkit-line-clamp: 2;
+    }
+
+    &-link {
+      @include flexbox(flex-start, flex-start, nowrap);
+      text-decoration: none;
+    }
+
+    &-img {
+      flex: 0 0 20%;
+    }
+
+    &-price {
+      @extend %price-shared;
+      bdi {
+        margin-left: 0;
+      }
+    }
+
+    &-no-price {
+      color: $dark-primary-color;
+      font-size: 1.6rem;
+    }
+
+    &-content {
+      flex: 0 0 80%;
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__comments {
+    margin-bottom: 1rem;
+  }
+
+  &__reviews {
+    margin-top: 2.25rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    transition: cubic-bezier(0.25, 0.8, 0.5, 1) 0.3s;
+    padding-bottom: 1rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 2rem;
+
+    &-head {
+      @extend %section-head-shared;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__review {
+    &-form-wrapper {
+      background-color: #f5f5f5ab;
+    }
+
+    &-form {
+      padding: 2rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #666666;
+    }
+  }
+
+  &__comment {
+    &-inner {
+      img {
+        padding: 0 !important;
+        border: 0.1rem solid $opacity-primary-color !important;
+      }
+    }
+    &-form-rating {
+      margin: 0.5rem 0 1.5rem 0;
+      p.stars {
+        margin: 0.5rem 0 1rem 0;
+        a {
+          &:before {
+            color: $dark-primary-color;
+          }
+        }
+      }
+    }
+    &-textarea {
+      font-family: "Roboto", sans-serif;
+      display: block;
+      margin-top: 0.5rem !important;
+      font-family: inherit;
+      height: 11rem !important;
+      border-radius: 0.3rem 0.3rem 0 0;
+      border: 0.1rem solid #c1bfbf;
+      padding: 0.5rem 1rem;
+      outline: none;
+      margin: 0;
+      background-color: #fff;
+      transition: color 0.3s, border 0.3s, background 0.3s, opacity 0.3s;
+      opacity: 0.8;
+      box-shadow: inset 0 -1.8em 1em 0 rgba(0, 0, 0, 0);
+
+      &:hover {
+        box-shadow: inset 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+      }
+
+      &:focus {
+        box-shadow: 0 0 5px #ccc;
+        opacity: 1 !important;
+        outline: 0;
+        color: #333;
+        background-color: #fff;
+      }
+    }
+    &-form-btn {
+      color: $white-color !important;
+      background-color: $primary-color !important;
+    }
+
+    &-text {
+      @include flexbox(flex-start, flex-start, wrap, column);
+      margin-left: 5rem;
+      .star-rating {
+        zoom: 0.8;
+        span {
+          &:before {
+            color: $dark-primary-color;
+          }
+        }
+      }
+    }
+
+    &-field {
+      @include flexbox(center, flex-start, nowrap);
+      > label {
+        flex: 0 0 5rem;
+      }
+    }
+
+    &-input {
+      font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      padding: 0.5rem 1rem;
+      height: 3rem;
+      font-size: 1.4rem;
+      border-radius: 0;
+      vertical-align: middle;
+      background-color: #fff;
+      box-shadow: inset 0 -1.8em 1em 0 rgba(0, 0, 0, 0);
+      transition: color 0.3s, border 0.3s, background 0.3s, opacity 0.3s;
+      opacity: 0.8;
+
+      &:hover {
+        box-shadow: inset 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+      }
+
+      &:focus {
+        color: #333;
+        opacity: 1;
+        background-color: #fff;
+        box-shadow: 0 0 5px #ccc;
+      }
+    }
+  }
+
+  &__meta {
+    color: #333333;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__published-date {
+    font-style: italic;
+  }
+
+  &__description {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+
+  &__rating {
+    margin-bottom: 0.5rem !important;
+    .star-rating {
+      margin-top: 0.6rem !important;
+      &:before {
+        color: $dark-primary-color;
+      }
+      span {
+        &:before {
+          color: $dark-primary-color;
+        }
+      }
+    }
+  }
+}
+
+// A bit Woocommerce css
+.woocommerce div.product div.images .flex-control-thumbs li {
+  width: unset;
+}
+
+.flex-control-nav.flex-control-thumbs {
+  margin-top: 0.5rem;
+}

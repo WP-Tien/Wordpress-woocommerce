@@ -1,0 +1,182 @@
+.shop-widget {
+  margin-bottom: 3rem;
+  background-color: $white-color;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+
+  &__head {
+    text-transform: uppercase;
+    color: #32373c;
+    height: 3.5rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    display: flex;
+    line-height: 2.5rem;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid #3333333b;
+    margin-bottom: 1rem;
+
+    &:after {
+      content: "";
+      width: 15%;
+      height: 0.3rem;
+      background-color: $primary-color;
+      top: 3.3rem;
+      position: absolute;
+    }
+  }
+}
+
+// Widgets woocommerce
+// Product Categories
+.widget_product_categories {
+  font-size: 1.4rem;
+  a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .toggleRotate {
+    transform: rotate(-45deg);
+  }
+
+  .toggle {
+    @include transition(transform, 0.3s);
+    cursor: pointer;
+    margin-right: 0.5rem;
+    display: inline-block;
+
+    > svg {
+      color: rgba(0, 0, 0, 0.8);
+      width: 1rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  > ul {
+    > li {
+      @include flexbox(center, flex-start, wrap, row);
+      a {
+        display: inline-block;
+        padding: 0.6rem 0;
+        flex: 1;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .cat-parent {
+    > a {
+      font-weight: 500;
+    }
+
+    > .children {
+      padding-left: 0.8rem;
+      display: none;
+
+      > .children {
+        padding-left: 0.8rem;
+      }
+    }
+  }
+}
+
+.widget_price_filter {
+  form {
+    padding: 1.5rem 0;
+
+    .price_label {
+      font-size: 1.5rem;
+    }
+
+    button {
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .price_slider_wrapper {
+      .price_slider {
+        background-color: #443d3d29 !important;
+        height: 0.5rem !important;
+      }
+
+      .ui-slider-range.ui-widget-header.ui-corner-all {
+        background-color: $primary-color !important;
+      }
+
+      .ui-slider .ui-slider-handle {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        top: -0.6rem !important;
+        border-radius: 50% !important;
+      }
+
+      .ui-slider-handle.ui-state-default.ui-corner-all {
+        background-color: $primary-color !important;
+      }
+    }
+  }
+}
+
+.widget-product {
+  &__link {
+    display: flex !important;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+  &__img {
+    margin-right: 1rem;
+    flex: 0 0 25%;
+    > img {
+      width: 100% !important;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    color: #191e23;
+    font-size: 1.3rem;
+    @extend %clamp-shared;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0.4rem;
+  }
+
+  &__desc {
+    flex: 1;
+    @include flexbox(flex-start, center, wrap, column);
+  }
+
+  &__price {
+    color: $primary-color;
+    font-size: 1.4rem;
+    font-weight: 400;
+    @extend %price-shared;
+
+    bdi {
+      margin-left: 0;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.widget_product_tag_cloud {
+  .tagcloud {
+    margin-top: 2rem;
+    a {
+      padding: 0 0.3rem;
+      color: #333333;
+      text-decoration: none;
+    }
+  }
+}

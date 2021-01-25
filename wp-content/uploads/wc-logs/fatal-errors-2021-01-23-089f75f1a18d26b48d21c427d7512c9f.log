@@ -1,0 +1,194 @@
+2021-01-23T18:18:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php on line 44 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php(44): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:18:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php on line 44 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php(44): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:18:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php on line 44 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php(44): add_action('')
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:18:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php on line 44 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\hooks.php(44): add_action('')
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:19:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:19:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:19:42+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\functions\func_blog.php on line 65
+
+2021-01-23T18:19:44+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\functions\func_blog.php on line 65
+
+2021-01-23T18:19:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:19:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:20:17+00:00 CRITICAL syntax error, unexpected '}' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\functions\func_blog.php on line 69
+
+2021-01-23T18:20:19+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:20:29+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:20:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:20:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:20:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:20:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:21:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T18:21:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php on line 10 and at least 2 expected in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\template-hooks\hooks\blog-page.php(10): add_action()
+#1 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\init-template.php(33): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\functions.php(36): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\www\wd-tshop\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\www\wd-tshop\wp-config.php(91): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\www\wd-tshop\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\www\wd-tshop\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xamp in C:\xampp\htdocs\www\wd-tshop\wp-includes\plugin.php on line 409
+
+2021-01-23T19:44:08+00:00 CRITICAL syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\functions.php on line 124
+
+2021-01-23T19:44:11+00:00 CRITICAL syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\functions.php on line 124
+
+2021-01-23T19:44:36+00:00 CRITICAL syntax error, unexpected ';', expecting variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\functions.php on line 126
+
+2021-01-23T19:44:38+00:00 CRITICAL syntax error, unexpected ';', expecting variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\functions.php on line 126
+

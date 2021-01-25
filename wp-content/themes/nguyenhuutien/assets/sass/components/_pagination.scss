@@ -1,0 +1,42 @@
+.pagination {
+  margin: 3rem 4rem;
+  ul {
+    font-size: 1rem;
+    border: 0 !important;
+    li {
+      border: 0 !important;
+      margin: 0 1rem !important;
+
+      span.current {
+        padding: 0.5rem !important;
+        font-size: 2.5rem !important;
+        background-color: $primary-color !important;
+        color: $white-color !important;
+        width: 4rem;
+        border-radius: 0.3rem;
+      }
+
+      a {
+        padding: 0.5rem !important;
+        color: #595959;
+        font-size: 2.5rem !important;
+
+        &:hover,
+        &:focus {
+          background: transparent !important;
+          color: $primary-color !important;
+        }
+
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.page-numbers {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

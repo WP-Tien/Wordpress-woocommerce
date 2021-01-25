@@ -1,0 +1,31 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  &--building {
+    background-image: url("../images/building.svg");
+  }
+  &--support {
+    background-image: url("../images/support.svg");
+  }
+  &--computer {
+    background-image: url("../images/computer.svg");
+  }
+  &--facebook {
+    background-image: url("../images/facebook.svg");
+  }
+  &--instagram {
+    background-image: url("../images/instagram.svg");
+  }
+  &--arrLeft {
+    background-image: url("../images/back.svg");
+  }
+  &--arrRight {
+    background-image: url("../images/next.svg");
+  }
+  &--home {
+    background-image: url("../images/home.svg");
+  }
+  &--category {
+    background-image: url("../images/category.svg");
+  }
+}

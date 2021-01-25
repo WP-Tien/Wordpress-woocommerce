@@ -1,0 +1,11 @@
+.homepage-v1 {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1.55rem;
+}
+
+@include breakpoint-down(supersmall) {
+  .homepage-v1 {
+    margin-top: 0.2rem;
+  }
+}

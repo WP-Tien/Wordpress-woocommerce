@@ -1,0 +1,35 @@
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 12.4rem;
+  height: 4.6rem;
+  padding: 0 1.2rem;
+  color: $text-color;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  outline: none;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  text-shadow: none;
+
+  &--primary {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+
+  &--outline-primary {
+    color: $dark-primary-color;
+    background: $opacity-primary-color;
+    border: 1px solid $dark-primary-color;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.03);
+  }
+
+  &--small {
+    min-width: 9.4rem;
+    height: 3.6rem;
+  }
+}

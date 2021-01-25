@@ -1,0 +1,322 @@
+/* 
+    Mega menu 
+    Author: TienNguyen
+    Version: 1.0.0
+*/
+
+/* Variables */
+
+/* Animation */
+@keyframes growIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.show-if-mega,
+.show-if-item {
+  display: none;
+}
+
+.mega-menu.menu-item-depth-0 .show-if-mega,
+.mega-menu.menu-item-depth-1 .show-if-item {
+  display: block;
+}
+
+.mega-menu .menu-item-depth-1 .show-if-mega {
+  display: none;
+}
+
+.show-if-mega-menu,
+.show-if-mega-menu-type {
+  display: none;
+}
+
+.menu-item-depth-0 .show-if-mega-menu,
+.mega-menu.menu-item-depth-1 .show-if-mega-menu-type {
+  display: block;
+}
+
+.menu-item-depth-1 .show-if-mega-menu,
+.menu-item-depth-2 .show-if-mega-menu {
+  display: none;
+}
+
+.mega-menu.menu-item-depth-1 .hide-if-item {
+  display: none;
+}
+
+/* 
+  Modal icons
+*/
+.admin-menu-icons-modal {
+  z-index: 160000;
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  left: 30px;
+  bottom: 30px;
+}
+
+.media-modal {
+  max-width: 750px;
+  max-height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.media-modal-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  background: #fcfcfc;
+}
+
+.modal-open .media-modal-inner {
+  -webkit-animation: growIn 0.3s ease-in-out;
+  -moz-animation: growIn 0.3s ease-in-out;
+  -ms-animation: growIn 0.3s ease-in-out;
+  -o-animation: growIn 0.3s ease-in-out;
+  animation: growIn 0.3s ease-in-out;
+}
+
+.media-frame-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 200;
+}
+
+.media-frame-title h1 {
+  padding: 0 16px;
+  font-size: 22px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.media-frame-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 61px;
+  height: auto;
+  width: auto;
+  margin: 0;
+  overflow: auto;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.option-modal-icons {
+  position: relative;
+  display: flex;
+  padding: 24px 27px 21px;
+}
+
+.media-frame-toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  bottom: 60px;
+  height: auto;
+}
+
+.media-toolbar {
+  top: auto;
+  bottom: -47px;
+  height: auto;
+  overflow: visible;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 16px;
+}
+
+.media-toolbar-primary > .media-button {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.media-toolbar-primary {
+  color: rgb(68, 68, 68);
+  float: right;
+  font-size: 12px;
+  height: 45px;
+  line-height: 18.2px;
+  outline-color: rgb(68, 68, 68);
+  outline-style: none;
+  outline-width: 0px;
+}
+
+.admin-label {
+  flex: 0 0 20%;
+  margin: 6px 6px 0 0;
+}
+
+.admin-label label {
+  color: rgb(68, 68, 68);
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+  margin-top: 1.4px;
+}
+
+.admin-icon-selector {
+  flex: 0 0 80%;
+  height: 340px;
+  padding-left: 1px;
+  overflow: auto;
+}
+
+.admin-menu-icons-modal .media-modal-backdrop {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 360px;
+  background: #000;
+  opacity: 0.7;
+}
+
+.modal-open .media-modal-backdrop {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.media-modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  background: 0 0;
+  color: #666;
+  z-index: 1000;
+  cursor: pointer;
+  outline: 0;
+  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+}
+
+.media-modal-close:hover {
+  color: #db382f;
+}
+
+.del-button-admin-icon:before,
+.media-modal-close:before {
+  content: "\f158";
+  display: block !important;
+  font: 400 18px/1 dashicons;
+}
+
+.icon {
+  float: left;
+  border: 1px solid #e1e1e1;
+  margin: 0 0 -1px -1px;
+  padding: 0.7em 0;
+  background-color: #ffffff;
+  text-align: center;
+  min-width: 3em;
+}
+
+.icon:hover {
+  background: #0074a2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item-icon-frame {
+  border: 1px solid #e1e1e1;
+  padding: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.menu-item-icon-frame svg {
+  color: #e1e1e1;
+}
+
+/* .field-mega-menu-icon  */
+
+.inline-if-empty {
+  display: none;
+}
+
+.empty .inline-if-empty {
+  display: inline;
+}
+
+.empty .hide-if-empty {
+  display: none;
+}
+
+.mega-menu-icon-remove {
+  font-size: 14px !important;
+  line-height: 13px;
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  display: block;
+  border: none;
+  -webkit-transition: none;
+  background-color: white;
+  transition: none;
+  width: auto;
+  height: auto;
+}
+
+.mega-menu-icon-frame {
+  position: relative;
+  border: 1px solid #e1e1e1;
+  padding: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.mega-menu-icon-selected {
+  min-width: 1em;
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+  pointer-events: none;
+}

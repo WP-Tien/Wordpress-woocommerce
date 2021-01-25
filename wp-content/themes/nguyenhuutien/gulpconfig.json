@@ -1,0 +1,22 @@
+{
+  "browserSyncOptions": {
+    "proxy": "http://tshop.me",
+    "notify": false,
+    "browser": ["firefox", "chrome"]
+  },
+  "browserSyncWatchFiles": [
+    "./assets/css/*.css",
+    "./assets/js/scripts.js",
+    "./assets/js/*.js",
+    "./**/*.php",
+    "./*.php"
+  ],
+  "paths": {
+    "js": "./assets/js",
+    "css": "./assets/css",
+    "img": "./assets/images",
+    "sass": "./assets/sass",
+    "src": "./assets/src",
+    "node": "./node_modules"
+  }
+}

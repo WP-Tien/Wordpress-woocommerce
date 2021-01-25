@@ -1,0 +1,127 @@
+%clamp-shared {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%img-fit-width {
+  min-width: 100%;
+  height: auto;
+}
+
+%img-fit-height {
+  min-height: 100%;
+  width: auto;
+}
+
+%price-shared {
+  bdi {
+    font-size: 1.6rem;
+    color: $primary-color;
+    margin-left: 0.6rem;
+    text-decoration: none;
+  }
+
+  > del {
+    bdi {
+      font-size: 1.4rem;
+      color: #666;
+      text-decoration: line-through;
+    }
+  }
+
+  > ins {
+    text-decoration: none;
+    bdi {
+      font-size: 1.6rem;
+      color: $primary-color;
+      margin-left: 0.6rem;
+    }
+  }
+}
+
+%section-head-shared {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+%owl-nav-shared {
+  .owl-nav {
+    display: block;
+
+    .owl-prev,
+    .owl-next {
+      top: 45%;
+      outline: 0;
+      background-color: $white-color !important;
+      display: block;
+      font-size: 1rem !important;
+      color: #e3e3e3 !important;
+      height: 3.8rem;
+      width: 3.8rem;
+      line-height: 2.8rem !important;
+      position: absolute;
+      text-align: center;
+      opacity: 0;
+      border: 0.1rem solid #e2e2e2 !important;
+      border-radius: 50%;
+      z-index: 100;
+      @include transform(scale(1), center, flat);
+      @include transition([opacity width height], 0.2s, ease);
+    }
+
+    .owl-prev {
+      left: -1.5rem;
+      right: auto;
+    }
+
+    .owl-next {
+      right: -1.5rem;
+      left: auto;
+    }
+  }
+  &:hover {
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  @include breakpoint-down(supersmall) {
+    .owl-nav {
+      .owl-next {
+        right: 0.5rem;
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      .owl-prev {
+        left: 0.5rem;
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+%input-shared {
+  border: 0.1rem solid #dedede;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  @include transition(all, 0.3s);
+  height: 3.5rem;
+  font-size: 1.4rem;
+
+  &:focus {
+    border: 0.1rem solid #999;
+  }
+}

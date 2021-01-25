@@ -1,0 +1,28 @@
+// Woo
+form.woocommerce-form.woocommerce-form-login.login,
+form.woocommerce-form.woocommerce-form-register.register {
+  background-color: $white-color;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.woocommerce-Input.woocommerce-Input--text.input-text {
+  //   padding: 0.5rem 1rem;
+  //   border: 0.1rem solid #dedede;
+  //   background: transparent;
+  //   height: 3.5rem;
+  //   font-size: 1.4rem;
+  @extend %input-shared;
+}
+
+.woocommerce-privacy-policy-text {
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+.woocommerce-password-strength {
+  background-color: $primary-color !important;
+  color: $white-color;
+  font-weight: 300;
+  padding: 0.8rem;
+}

@@ -1,0 +1,52 @@
+.home-promotion {
+  margin-top: 2rem;
+
+  &__inner {
+    background-color: $white-color;
+  }
+
+  &__header {
+    height: 5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0 1.25rem;
+    @include flexbox(center, space-between);
+
+    &-title {
+      font-size: 2.3rem;
+      color: rgba(0, 0, 0, 0.54);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-style: italic;
+      line-height: normal;
+      @include gradient-text($primary-color, #fb8f17);
+    }
+
+    &-more {
+      font-size: 1.4rem;
+      padding: 0.3125rem 0.4375rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $primary-color;
+    }
+
+    &-icon {
+      width: 1rem;
+      height: 1rem;
+      fill: currentColor;
+    }
+  }
+
+  &__body {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+
+    @extend %owl-nav-shared;
+  }
+}
+
+@include breakpoint-down(medium) {
+  .home-promotion {
+    margin-top: 0;
+  }
+}

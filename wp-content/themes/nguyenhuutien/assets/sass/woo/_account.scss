@@ -1,0 +1,94 @@
+.account__wrap {
+  margin-top: 2.25rem;
+}
+
+.woocommerce-MyAccount-navigation {
+  border: 0.1rem solid #d3ced2;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  background-color: white;
+}
+
+.woocommerce-MyAccount-content {
+  background-color: $white-color;
+  border: 0.1rem solid #d3ced2;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+li.woocommerce-MyAccount-navigation-link {
+  a {
+    display: block;
+    padding: 2rem;
+    background: $white-color;
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 0.1rem solid #eee;
+  }
+  &:last-child {
+    a {
+      border-bottom: 0;
+    }
+  }
+}
+
+li.woocommerce-MyAccount-navigation-link.is-active {
+  a {
+    background: $primary-color;
+    color: $white-color;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -4rem;
+      top: 0.1rem;
+      border-style: solid;
+      border-width: 2.8rem 2rem;
+      border-color: transparent transparent transparent $primary-color;
+    }
+  }
+}
+
+.woocommerce-input-wrapper {
+  > input {
+    @extend %input-shared;
+  }
+}
+
+.woocommerce-Input.input-text {
+  @extend %input-shared;
+}
+
+@include breakpoint-down(medium) {
+  .woocommerce-MyAccount-content {
+    margin-top: 1rem;
+  }
+
+  .woocommerce-MyAccount-navigation {
+    ul {
+      display: flex;
+    }
+  }
+
+  li.woocommerce-MyAccount-navigation-link a {
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem !important;
+    font-weight: 400;
+    border: 0.1rem solid hsla(0, 0%, 100%, 0.6);
+  }
+
+  li.woocommerce-MyAccount-navigation-link.is-active {
+    a {
+      background-color: transparent;
+      color: $primary-color;
+      &:after {
+        all: initial;
+        all: unset;
+      }
+    }
+  }
+}

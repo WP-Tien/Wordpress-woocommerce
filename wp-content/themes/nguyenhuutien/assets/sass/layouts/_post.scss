@@ -1,0 +1,27 @@
+.post {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  &__header {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    @extend %img-fit-height;
+    background-size: cover;
+  }
+
+  &__info {
+    padding: {
+      left: 2rem;
+      right: 2rem;
+    }
+  }
+
+  &__excerpt {
+  }
+
+  &__footer {
+  }
+}

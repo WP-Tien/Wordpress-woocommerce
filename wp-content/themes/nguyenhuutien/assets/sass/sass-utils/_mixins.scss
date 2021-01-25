@@ -1,0 +1,94 @@
+/* FLEX */
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: wrap,
+  $direction: row
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+/* ANIMATION */
+@mixin animation($name, $duration, $iteration-count, $timing-function: "ease") {
+  animation: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration-count;
+  animation-timing-function: $timing-function;
+}
+
+/* TRANSFORM */
+@mixin transform(
+  $transform,
+  $transform-origin: 50% 50%,
+  $transform-style: flat
+) {
+  transform: $transform;
+  transform-origin: $transform-origin;
+  transform-style: $transform-style;
+}
+
+/* TRANSITION */
+@mixin transition(
+  $property: all,
+  $duration: 0s,
+  $timing-function: ease,
+  $delay: 0s
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  transition-delay: $delay;
+}
+
+/* BREAKPOINT */
+@mixin breakpoint-up($name, $bp: $breakpoints-up) {
+  $min: map-get($bp, $name);
+
+  @if $min != null {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($name, $bp: $breakpoints-down) {
+  $max: map-get($bp, $name);
+
+  @if $max != null {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin breakpoint-between(
+  $name-from,
+  $name-to,
+  $bp-up: $breakpoints-up,
+  $bp-down: $breakpoints-down
+) {
+  $min: map-get($breakpoints-up, $name-from);
+  $max: map-get($breakpoints-down, $name-to);
+
+  @if $max != null and $min != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin gradient-text($color-1: $dark-primary-color, $color-2: $primary-color) {
+  background: -webkit-linear-gradient($color-1, $color-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

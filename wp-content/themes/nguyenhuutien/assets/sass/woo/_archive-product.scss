@@ -1,0 +1,22 @@
+.archive-product {
+  &__main {
+    margin-top: 2.25rem;
+  }
+
+  &__sidebar {
+    padding-right: 2rem;
+  }
+
+  &__action {
+    font-size: 1.4rem;
+    @include flexbox(center, space-between, wrap);
+  }
+}
+
+@include breakpoint-down(medium) {
+  .archive-product {
+    &__sidebar {
+      padding-right: 0rem;
+    }
+  }
+}

@@ -1,0 +1,231 @@
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.container,
+.container-fluid {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-fluid {
+  margin-right: $margin-fluid;
+  margin-left: $margin-fluid;
+}
+
+.row {
+  @include flexbox(stretch, flex-start, wrap);
+  margin-left: -0.4rem;
+  margin-right: -0.4rem;
+  min-width: 100%;
+}
+
+.col {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.col-wide {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.col-large {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+  > .col,
+  [class*="col-"],
+  [class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // .row {
+  //   margin: {
+  //     left: 0;
+  //     right: 0;
+  //   }
+  // }
+}
+
+// order
+@for $i from 1 through $cols {
+  .order-#{$i} {
+    order: $i;
+  }
+}
+
+.order-last {
+  order: 13;
+}
+
+.order-first {
+  order: -1;
+}
+
+// 320px
+@include breakpoint-up(tiny) {
+  .container {
+    margin: 0 1%;
+  }
+
+  // col
+  @for $i from 1 through $cols {
+    .col-tiny-#{$i} {
+      display: block;
+      flex: 0 0 (100% * $i) / $cols;
+      max-width: (100% * $i) / $cols;
+    }
+  }
+
+  // index
+  @for $i from 1 through $cols {
+    .order-tiny-#{$i} {
+      order: $i;
+    }
+  }
+
+  .order-tiny-first {
+    order: -1;
+  }
+
+  .order-tiny-last {
+    order: 13;
+  }
+}
+
+// 520
+@include breakpoint-up(supersmall) {
+  .container {
+    margin: 0 3%;
+  }
+
+  @for $i from 1 through $cols {
+    .col-supersmall-#{$i} {
+      display: block;
+      flex: 0 0 (100% * $i) / $cols;
+      max-width: (100% * $i) / $cols;
+    }
+  }
+}
+
+// 768
+@include breakpoint-up(small) {
+  .container {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through $cols {
+    .col-small-#{$i} {
+      display: block;
+      flex: 0 0 (100% * $i) / $cols;
+      max-width: (100% * $i) / $cols;
+    }
+  }
+}
+
+// 992
+@include breakpoint-up(medium) {
+  .container {
+    max-width: 95rem;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through $cols {
+    .col-medium-#{$i} {
+      display: block;
+      flex: 0 0 (100% * $i) / $cols;
+      max-width: (100% * $i) / $cols;
+    }
+  }
+
+  // index
+  @for $i from 1 through $cols {
+    .order-medium-#{$i} {
+      order: $i;
+    }
+  }
+
+  .order-medium-first {
+    order: -1;
+  }
+
+  .order-medium-last {
+    order: 13;
+  }
+}
+
+// 1024
+@include breakpoint-up(large) {
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through $cols {
+    .col-large-#{$i} {
+      display: block;
+      flex: 0 0 (100% * $i) / $cols;
+      max-width: (100% * $i) / $cols;
+    }
+  }
+}
+
+// 1280
+@include breakpoint-up(wide) {
+  .container {
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through $cols {
+    .col-wide-#{$i} {
+      display: block;
+      flex: 0 0 (100% * $i) / $cols;
+      max-width: (100% * $i) / $cols;
+    }
+  }
+
+  // 12 / 5 = 20
+  // Lấy 2 phần * 5
+  .col-wide-2-12 {
+    display: block;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+// More helpful
+@include breakpoint-down(supersmall) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+}
+
+@include breakpoint-between(supersmall, medium) {
+  .show-on-tablet {
+    display: block;
+  }
+
+  .hide-on-tablet {
+    display: none;
+  }
+}

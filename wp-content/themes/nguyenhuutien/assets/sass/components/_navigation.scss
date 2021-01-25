@@ -1,0 +1,15 @@
+.navigation {
+  margin-bottom: 2rem;
+  &__list {
+    @include flexbox();
+    li {
+      padding: 1rem;
+      background-color: $primary-color;
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+      a {
+        color: $white-color;
+      }
+    }
+  }
+}

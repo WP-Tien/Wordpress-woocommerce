@@ -1,0 +1,26 @@
+.home-notification {
+  margin-top: 2rem;
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    img {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@include breakpoint-down(medium) {
+  .home-notification {
+    margin-top: 0.8rem;
+
+    &__item {
+      margin-bottom: 0.8rem;
+    }
+  }
+}

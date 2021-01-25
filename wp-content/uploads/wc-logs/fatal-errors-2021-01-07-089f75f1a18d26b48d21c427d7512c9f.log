@@ -1,0 +1,16 @@
+2021-01-07T05:31:20+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\enqueue.php on line 96
+
+2021-01-07T05:31:32+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\enqueue.php on line 96
+
+2021-01-07T05:31:33+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\www\wd-tshop\wp-content\themes\nguyenhuutien\inc\enqueue.php on line 96
+
+2021-01-07T15:25:30+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp\htdocs\www\wd-tshop\wp-content\plugins\nht-slider\includes\admin\cptajax.php on line 32
+
+2021-01-07T15:25:38+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp\htdocs\www\wd-tshop\wp-content\plugins\nht-slider\includes\admin\cptajax.php on line 32
+
+2021-01-07T15:25:39+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp\htdocs\www\wd-tshop\wp-content\plugins\nht-slider\includes\admin\cptajax.php on line 32
+
+2021-01-07T15:28:36+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp\htdocs\www\wd-tshop\wp-content\plugins\nht-slider\includes\admin\cptajax.php on line 32
+
+2021-01-07T15:31:27+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp\htdocs\www\wd-tshop\wp-content\plugins\nht-slider\includes\admin\cptajax.php on line 32
+

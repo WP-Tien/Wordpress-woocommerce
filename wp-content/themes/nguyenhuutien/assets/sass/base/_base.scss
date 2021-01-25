@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: $text-color;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@include breakpoint-down(small) {
+  html,
+  body {
+    font-size: 55%;
+  }
+
+  $margin-top: 0.5rem;
+}
+
+@include breakpoint-down(supersmall) {
+  html,
+  body {
+    font-size: 50%;
+  }
+
+  $margin-top: 0.5rem;
+}

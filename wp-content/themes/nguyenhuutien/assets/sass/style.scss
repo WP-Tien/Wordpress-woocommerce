@@ -1,0 +1,56 @@
+/** ***************** **/
+/** Primary Sass File **/
+/**    TIEN NGUYEN    **/
+/** ***************** **/
+
+// Sass utilities
+@import "./sass-utils/variables";
+@import "./sass-utils/mixins";
+@import "./sass-utils/extends";
+@import "./sass-utils/functions";
+@import "./sass-utils/placeholder";
+
+// Sources fonts
+@import "./vendor/fonts";
+@import "./vendor/fontawesome";
+@import "./vendor/owl-carousel";
+
+// Bases
+@import "./base/reset";
+@import "./base/base";
+@import "./base/keyframes";
+@import "./base/typography";
+@import "./base/common";
+@import "./base/form";
+
+// Components
+@import "./components/buttons";
+@import "./components/icons-svg";
+@import "./components/notices";
+@import "./components/select";
+@import "./components/pagination";
+@import "./components/navigation";
+@import "./components/breadcrumb";
+
+// Pages
+@import "./pages/homepage";
+@import "./pages/singlepage";
+@import "./pages/blogs";
+
+// Layouts
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/lift-nav";
+@import "./layouts/post";
+@import "./layouts/section_category-carousel";
+@import "./layouts/section_home_popular_category";
+@import "./layouts/section_home_notification";
+@import "./layouts/section_home_promotion";
+@import "./layouts/section_products_for_you";
+@import "./layouts/footer";
+
+// Woo part
+@import "./woo/woo";
+
+// Base grids
+@import "./base/grids";

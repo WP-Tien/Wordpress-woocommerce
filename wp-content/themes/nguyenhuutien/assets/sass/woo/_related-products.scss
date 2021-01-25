@@ -1,0 +1,24 @@
+.related-products {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: $white-color;
+
+  &__head {
+    @extend %section-head-shared;
+  }
+
+  &__list {
+    position: relative;
+    @extend %owl-nav-shared;
+
+    // &:hover {
+    //   .owl-nav {
+    //     .owl-prev,
+    //     .owl-next {
+    //       opacity: 1;
+    //       transform: scale(1.2);
+    //     }
+    //   }
+    // }
+  }
+}

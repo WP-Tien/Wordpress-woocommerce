@@ -1,0 +1,52 @@
+.lift-nav {
+  position: fixed;
+  width: 0.4rem;
+  bottom: 20vh;
+  left: 0;
+  z-index: 100;
+
+  &__box {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #f5f5f5;
+    border: 0.1rem solid #fff;
+    line-height: 4rem;
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: width 0.2s ease-out;
+
+    &:not(:first-child) {
+      &:hover {
+        width: 17rem;
+      }
+    }
+  }
+
+  &__icon {
+    color: rgb(158, 158, 158);
+    font-size: 1.5rem;
+    transition: color 0.2s ease-out;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    font-size: 1.1rem;
+    left: 4rem;
+    width: 14rem;
+    color: #fe6433;
+  }
+}
+
+@include breakpoint-down(small) {
+  .lift-nav {
+    display: none;
+  }
+}

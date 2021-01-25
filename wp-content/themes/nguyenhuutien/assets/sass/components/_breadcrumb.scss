@@ -1,0 +1,14 @@
+ul.breadcrumb-post {
+  display: inline-flex;
+  margin : {
+    top: 2rem;
+    bottom: 4rem;
+    left: 1rem;
+  }
+  position: relative;
+  font-size: 1.4rem;
+
+  li {
+    margin-right: 1rem;
+  }
+}

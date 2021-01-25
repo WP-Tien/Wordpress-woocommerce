@@ -1,0 +1,32 @@
+.cart {
+  &__heading {
+    margin-top: 2.25rem;
+  }
+
+  &__input-couple {
+    width: 20rem !important;
+  }
+}
+
+.woocommerce-cart-form {
+  margin-top: 2rem;
+  background-color: $white-color;
+}
+
+.cart_totals.calculated_shipping {
+  width: 100% !important;
+}
+
+.cart-collaterals {
+  margin-top: 2.25rem;
+}
+
+.shop_table.shop_table_responsive {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  background-color: $white-color;
+}
+
+.input-text {
+  @extend %input-shared;
+}

@@ -1,0 +1,16 @@
+.breadcrumb {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 2.25rem;
+
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@include breakpoint-down(medium) {
+  .breadcrumb {
+    padding-top: 1.25rem;
+  }
+}

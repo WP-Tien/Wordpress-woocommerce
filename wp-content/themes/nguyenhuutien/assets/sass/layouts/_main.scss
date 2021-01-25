@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+  margin-top: $header-height;
+  // +1 rem
+  display: block;
+}
+
+@include breakpoint-down(medium) {
+  .main {
+    margin-top: 10rem;
+  }
+}
+
+@include breakpoint-down(supersmall) {
+  .main {
+    margin-top: $header-height / 2;
+  }
+}

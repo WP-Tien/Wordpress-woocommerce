@@ -1,0 +1,38 @@
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}px !important;
+  }
+  .p-#{$space} {
+    padding: #{$space}px !important;
+  }
+}
+
+@each $name, $height in $heights {
+  .lh-#{$name} {
+    line-height: #{$height} !important;
+  }
+}
+
+.text-clamp {
+  @extend %clamp-shared;
+  &--1 {
+    @extend %clamp-shared;
+    -webkit-line-clamp: 1;
+  }
+  &--2 {
+    @extend %clamp-shared;
+    -webkit-line-clamp: 2;
+  }
+}
