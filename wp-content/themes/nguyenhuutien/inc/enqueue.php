@@ -61,6 +61,7 @@ if (!function_exists('customzier_live_preview')) {
 if (!function_exists('register_admin_scripts')) {
     function register_admin_scripts($hook)
     {
+        //  $is_page = get_current_screen()->post_type;
         if ($hook == 'nav-menus.php') {
             $css_menu_admin_version = THEME_VERSION . '.' . filemtime(INCLUDE_DIR . 'assets/css/admin-style.css');
             wp_register_style('admin-menu-style', INCLUDE_DIR_URI . 'assets/css/admin-style.css', array(), $css_menu_admin_version);
